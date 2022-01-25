@@ -1,0 +1,48 @@
+@import './variables';
+
+.footer{
+    background-image: linear-gradient(120deg, rgba(130, 34, 114, .7) 20%, rgba(249, 153, 233, 1) 100%);
+    padding: 7.5rem;
+
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8rem;
+        color: #ffffff;
+        max-width: 123rem;
+        margin: 0rem auto;
+
+    }
+}
+
+.brand-block{
+    width: 49rem;
+}
+
+.brand-text{
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    margin-top: 2.2rem;
+
+    p{
+        margin-bottom: 4rem;
+    }
+}
+
+.grid__links{
+    font-size: 1.8rem;
+    line-height: 3.8rem;
+    list-style: none;
+
+    &-item a{
+        text-decoration: none;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    .head{
+        font-weight: bold;
+        font-size: 2rem;
+        line-height: 6rem;
+    }
+}

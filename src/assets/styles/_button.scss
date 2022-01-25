@@ -1,0 +1,54 @@
+@import './variables';
+
+.btn{
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 55px;
+    cursor: pointer;
+
+
+    &__blue{
+        padding: 2rem 3rem;
+        background-color: $btn-active-dark;
+        background-image: linear-gradient(120deg, rgba(130, 34, 114, .7) 20%, rgba(249, 153, 233, 1) 100%);
+        color:#ffffff;
+
+        &:hover{
+            background-color: $btn-active-hover;
+        }
+    }
+
+    &__white{
+        padding: 1.8rem 2.8rem;
+        background-color:$bg-color;
+        border: 2px solid $btn-active-dark;
+        color: $btn-active-dark;
+        width: 20rem;
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        &:hover{
+            background-image: linear-gradient(120deg, rgba(130, 34, 114, .7) 20%, rgba(249, 153, 233, 1) 100%);
+            border: 2px solid #ffffff;
+            color: #ffffff;
+
+        }
+    }
+
+    &-text{
+        text-align: start;
+        color: $btn-active-medium;
+
+        &:hover{
+            color: $btn-active-dark;
+        }
+    }
+}
+
+.icon-arrow{
+    margin-left: 2rem;
+}

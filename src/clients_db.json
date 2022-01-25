@@ -1,0 +1,30 @@
+[
+    {
+        "id": "1",
+        "name": "Мария Дэйм",
+        "profession": "Менеджер",
+        "photo": "img/michael-dam.jpg",
+        "review":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae assumenda voluptatem maxime rem accusantium consectetur velit suscipit dolore quae sed? Illo maxime iste praesentium adipisci quas? Dolorum soluta repellendus nihil."
+    },
+    {
+        "id": "2",
+        "name": "Михаил Дули",
+        "profession": "Дизайнер",
+        "photo": "img/ian-dooley.jpg",
+        "review":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae assumenda voluptatem maxime rem accusantium consectetur velit suscipit dolore quae sed? Illo maxime iste praesentium adipisci quas? Dolorum soluta repellendus nihil."
+    },
+    {
+        "id": "3",
+        "name": "Иосиф Гонсалез",
+        "profession": "Арт директор",
+        "photo": "img/joseph-gonzalez.jpg",
+        "review":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae assumenda voluptatem maxime rem accusantium consectetur velit suscipit dolore quae sed? Illo maxime iste praesentium adipisci quas? Dolorum soluta repellendus nihil."
+    },
+    {
+        "id": "4",
+        "name": "Бен Паркер",
+        "profession": "Частный предприниматель",
+        "photo": "img/ben-parker.jpg",
+        "review":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae assumenda voluptatem maxime rem accusantium consectetur velit suscipit dolore quae sed? Illo maxime iste praesentium adipisci quas? Dolorum soluta repellendus nihil."
+    }
+]

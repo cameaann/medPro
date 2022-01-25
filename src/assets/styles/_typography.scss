@@ -1,0 +1,42 @@
+@import './variables';
+@import './mixins';
+
+.secondary-heading{
+    font-size: 3.6rem;
+    line-height: 5.6rem;
+    font-weight: bold;
+
+    &_center{
+        text-align: center;
+        // margin: 0 auto 3.5rem auto;
+        &::after{
+            @include lineAfterText(black);
+            margin: 5rem auto;
+        }
+    }
+
+    &_white{
+        text-align: center;
+        &::after{
+            @include lineAfterText(white);
+            margin: 5rem auto;
+        }
+    }
+    &_right{
+        text-align: start;
+        &::after{
+            @include lineAfterText(black);
+            margin: 5rem 0;
+        }
+    }
+}
+
+.text{
+    font-size: 1.8rem;
+    line-height: 3rem;
+
+    &-center{
+        text-align: center;
+        margin-bottom: 3.5rem;
+    }
+}
