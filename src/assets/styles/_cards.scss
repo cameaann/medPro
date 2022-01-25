@@ -28,6 +28,7 @@
         font-size: 1.6rem;
         font-weight: 300;
         line-height: 2.8rem;
+        color: $font-color-light;
     }
 
     &__content{
@@ -119,6 +120,7 @@
     &__description{
         font-size: 1.6rem;
         height: 8rem;
+        color: $font-color-light;
     }
     &__footer{
         justify-self: flex-start;

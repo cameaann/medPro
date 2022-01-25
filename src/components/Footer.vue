@@ -3,7 +3,7 @@
     <div class="footer__container">
       <div class="brand-block">
         <div class="logo__container">
-          <img class="logo" alt="MedPro logo" src="../assets/logo.png" />
+          <img class="logo" alt="MedPro logo" src="../assets/img/logo.png" />
           <span class="logoName">MedPro</span>
         </div>
         <div class="brand-text">

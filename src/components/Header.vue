@@ -2,7 +2,7 @@
   <div class = "header">
     <!-- <div class="header-container"> -->
         <div class="logo__container">
-            <img class="logo" alt="MedPro logo" src="../assets/logo.png">
+            <img class="logo" alt="MedPro logo" src="../assets/img/logo.png">
             <span class="logoName">MedPro</span>
         </div>
         <ul class="nav">
