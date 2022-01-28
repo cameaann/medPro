@@ -20,6 +20,10 @@
         &::after{
             @include lineAfterText(white);
             margin: 5rem auto;
+
+            @include response(phone-mini){
+                margin: 3rem auto;
+            }
         }
     }
     &_right{
@@ -28,7 +32,12 @@
             @include lineAfterText(black);
             margin: 5rem 0;
         }
+
+        @include response(phone-mini){
+            margin-top: 0rem;
+        }
     }
+
 }
 
 .text{
@@ -39,5 +48,9 @@
     &-center{
         text-align: center;
         margin-bottom: 3.5rem;
+
+        @include response(phone-mini){
+            text-align:left;
+        }
     }
 }

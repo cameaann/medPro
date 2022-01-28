@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./mixins";
 
 .section{
     margin: 10rem auto 25rem auto;
@@ -8,12 +9,26 @@
 
     &__img{
         max-width: 69.3rem;
+
+        @include response(phone-mini){
+            margin:5rem 0;
+        }
     }
 
     &-container{
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @include response(phone-mini){
+            // margin-bottom: 7rem;
+        }
+    }
+
+    @include response(phone-mini){
+        margin: 3rem auto 3rem auto;
+        flex-direction: column;
+        padding: 4rem;
     }
 }
 
@@ -23,10 +38,19 @@
     border-radius: 2.4rem;
     flex-direction: column;
     padding: 7.5rem;
+
+    @include response(phone-mini){
+        padding: 4rem;
+        border-radius: 0rem;
+    }
 }
 
 .one-column{
     flex-direction: column;
+
+    @include response(phone-mini){
+        margin-top: 10rem;
+    }
 }
 .text-box{
     display: flex;
@@ -34,6 +58,12 @@
     max-width: 44.5rem;
     margin-top: 10rem;
     align-items: flex-start;
+
+    @include response(phone-mini){
+        margin-bottom: 5rem;
+        margin-top: 0rem;
+        align-items: center;
+    }
 }
 .main-title{
     font-size: 4.8rem;
@@ -52,6 +82,11 @@
 .text-container{
     max-width: 80%;
     margin: 0 auto;
+
+    @include response(phone-mini){
+        max-width: 100%;
+    }
+
 }
 
 

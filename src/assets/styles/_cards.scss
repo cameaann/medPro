@@ -57,6 +57,12 @@
     justify-content: space-between;
     align-items: center;
     @include centralSlide;
+
+    @include response(phone-mini){
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+    }
 }
 .person{
     display: flex;
@@ -67,12 +73,25 @@
         height: 14rem;
         border-radius: 50%;
         border: 4px solid #FFFFFF;
+
+        @include response(phone-mini){
+            width:10rem;
+            height: 10rem;
+            border: 2px solid #FFFFFF;
+            }
+            
+
+    }
+
+    @include response(phone-mini){
+        margin-bottom: 3rem;
     }
 }
 
 .person-details{
     margin-left: 3rem;
     width:30rem;
+
     .name{
         font-size: 2.2rem;
         font-weight: bold;
@@ -80,10 +99,19 @@
     .prof{
         font-size: 1.8rem;
     }
+
+    @include response(phone-mini){
+        width: 100%;
+    }
 }
 .review{
     width: 45rem;
     font-size: 1.9rem;
+
+    @include response(phone-mini){
+        width: 100%;
+        font-size: 1.9rem;
+    }
 }
 
 //CARD-ARTICLE

@@ -17,9 +17,9 @@ cd dist
 # git commit -m 'deploy'
 
 # if you are deploying to https://<USERNAME>.github.io
-git push -f git@github.com:<cameaann>/<library>.github.io.git main
+git push -f git@github.com:<cameaann>/<medPro>.github.io.git main
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f https://github.com/cameaann/library.git main:gh-pages
+git push -f https://github.com/cameaann/medPro.git main:gh-pages
 
 cd -

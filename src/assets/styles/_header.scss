@@ -1,9 +1,18 @@
 @import './variables';
+@import './mixins';
 
 .header{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 123rem;
+    margin: 5rem auto;
+
+    @include response(phone-mini){
+        margin: 0rem auto;
+        padding: 4rem;
+    }
 }
 
 .logo__container{
@@ -22,36 +31,82 @@
 
 .nav{
     display: flex;
+    flex-direction: row;
     font-size: 1.8rem;
     max-width: 75rem;
     text-decoration: none;
     list-style: none;
+    transition: .5s ease all;
 
     &__item {
         justify-self: start;
+        border-bottom: 1px solid transparent;
+        transition: .5s ease all;
         cursor: pointer;
+        color: $font-color-light;
 
-        a{
-            text-decoration: none;
-            color: $font-color-light;
-
-        }
-
-        &.active a{
+        &.active>.link{
             font-weight: bold;
             color: $menu-item-active;
         }
 
+        .link{
+            display: block;
+            color: $font-color-light;
+            text-decoration: none;
+            padding: 2rem;
+            width:100%;
+            height: 100%;
+
+            &.active{
+                font-weight: bold;
+                color: $menu-item-active;
+            }
+
             &:hover{
-            text-decoration: underline;
+                color: $font-color-dark;
+            }
+        }
+
+        &:hover{
+            border-color: $font-color-dark;
         }
     }
 }
 
-// ul.nav{
-//  max-width: 75rem;
-// }
 
 ul>li.nav__item{
     margin: 0 2rem;
+}
+
+.icon{
+    display: flex;
+    // position: absolute;
+    // top: 2rem;
+    // right: 2.4rem;
+    align-items: center;
+
+    i{
+        font-size: 3rem;
+        cursor: pointer;
+        transition: .8s ease all;
+    }
+}
+
+.icon-active{
+    transform: rotate(180deg);
+}
+
+.dropdown-nav{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    max-width: 25rem;
+    height: 100%;
+    background-color:#ffffff;
+    top:0;
+    left: 0;
+    z-index: 200;
+
 }

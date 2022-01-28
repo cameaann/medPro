@@ -56,6 +56,10 @@
     top:30rem;
     left:50%;
     transform: translate(-50%, 0rem);
+
+    @include response(phone-mini){
+        top: 27rem;
+    }
 }
 
 @mixin lineAfterText($colorb){
@@ -64,10 +68,21 @@
     width:5.6rem;
     @if $colorb == black{
         border-bottom: 3px solid $font-color-dark;
+
+        @include response(phone-mini){
+            border-bottom: 2px solid $font-color-dark;
+        }
+
     }
     @if $colorb == white{
         border-bottom: 3px solid #ffffff;
+
+        @include response(phone-mini){
+            border-bottom: 2px solid #ffffff;
+        }
+
     }
+
 
 
 }

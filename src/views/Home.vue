@@ -1,7 +1,5 @@
 <template>
-<div>
   <div class="wrap-container">
-    <Header />
     <section class="section" id="find">
       <div class="text-box">
         <div class="main-title">Виртуальная забота о вашем здоровье</div>
@@ -67,7 +65,7 @@
       <img class="section__img" src="../assets/img/img3.svg" alt="" />
     </section>
     <section class="section blue" id="testimonials">
-      <div class="section-container">
+      <div class="section-container u_medium_bottom">
         <div class="secondary-heading secondary-heading_white">
           Что говорят наши клиенты
         </div>
@@ -103,20 +101,15 @@
         <div class="btn btn__white">Посмотреть все</div>
       </div>
     </section>
-  </div>
-    <Footer />
 </div>
-
 </template>
 
 <script>
 // @ is an alias to /src
-import Header from "@/components/Header.vue";
 import ServiceCard from "@/components/Service-card.vue";
 import servicesDb from "@/services_db.json";
 import articlesDb from "@/articles_db.json";
 import clientsDb from "@/clients_db.json";
-import Footer from "@/components/Footer.vue";
 import ArticleCard from "@/components/Article-card.vue";
 import Carousel from "@/components/Carousel.vue";
 import Slide from "@/components/Slide.vue";
@@ -124,10 +117,8 @@ import Slide from "@/components/Slide.vue";
 export default {
   name: "Home",
   components: {
-    Header,
     ServiceCard,
     ArticleCard,
-    Footer,
     Carousel,
     Slide
   },

@@ -1,4 +1,5 @@
 @import './variables';
+@import './mixins';
 
 .btn{
     display: block;
@@ -7,6 +8,7 @@
     text-align: center;
     border-radius: 55px;
     cursor: pointer;
+    transition: .5 ease all;
 
 
     &__blue{
@@ -14,9 +16,11 @@
         background-color: $btn-active-dark;
         background-image: linear-gradient(120deg, rgba(130, 34, 114, .7) 20%, rgba(249, 153, 233, 1) 100%);
         color:#ffffff;
+        transition: .5 ease all;
 
         &:hover{
             background-color: $btn-active-hover;
+            transition: .5s ease all;
         }
     }
 
@@ -30,13 +34,16 @@
         display: flex;
         justify-content: center;
         align-content: center;
+        transition: .5s ease all;
 
         &:hover{
             background-image: linear-gradient(120deg, rgba(130, 34, 114, .7) 20%, rgba(249, 153, 233, 1) 100%);
-            border: 2px solid #ffffff;
+            border: 2px solid $bg-color;
             color: #ffffff;
+            transition: .5s ease all;
 
         }
+
     }
 
     &-text{
@@ -45,6 +52,7 @@
 
         &:hover{
             color: $btn-active-dark;
+            transition: .5s ease all;
         }
     }
 }
