@@ -20,9 +20,15 @@ html{
      @include response(tab-port){ //width<900px
          font-size: 50%; //1rem=8px 8px/16px=50%
      }
+     @include response(phone-large){
+        font-size: 48%; //1rem=7px 7px/16px=44% <600px ???
+    }
      @include response(phone){
-         font-size: 44%; //1rem=7px 7px/16px=44% <600px
+         font-size: 44%; //1rem=7px 7px/16px=44% <425px
      }
+     @include response(phone-mini){
+        font-size: 40%; //1rem=6px 7px/16px=40% <325px
+    }
      @include response(big-desktop){ //width> 1800px
         font-size: 75%; //1rem=12px 12/16=75%
     }

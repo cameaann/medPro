@@ -10,7 +10,19 @@
     &__img{
         max-width: 69.3rem;
 
-        @include response(phone-mini){
+        @include response(tab-land){
+            max-width: 58rem;
+         }
+
+        @include response(tab-port){
+            max-width: 45rem;
+         }
+
+         @include response(phone-large){
+            margin:7rem 0;
+        }
+
+        @include response(phone){
             margin:5rem 0;
         }
     }
@@ -20,16 +32,36 @@
         flex-direction: column;
         align-items: center;
 
-        @include response(phone-mini){
+        @include response(phone){
             // margin-bottom: 7rem;
         }
     }
 
-    @include response(phone-mini){
+    @include response(tab-land){
+        margin: 3rem auto 3rem auto;
+        flex-direction: row;
+        padding: 4rem;
+    }
+
+    @include response(tab-port){
+        // margin: 3rem auto 3rem auto;
+        // flex-direction: column;
+        // padding: 4rem;
+    }
+
+    @include response(phone-large){
         margin: 3rem auto 3rem auto;
         flex-direction: column;
         padding: 4rem;
     }
+
+    @include response(phone){
+        margin: 3rem auto 3rem auto;
+        flex-direction: column;
+        padding: 4rem;
+    }
+
+
 }
 
 .blue{
@@ -39,16 +71,30 @@
     flex-direction: column;
     padding: 7.5rem;
 
-    @include response(phone-mini){
+    @include response(tab-land){
+        padding: 4rem;
+        margin: 15rem 5rem;
+    }
+
+    @include response(tab-port){
+        padding: 4rem;
+        margin-bottom: 15rem;
+    }
+
+    @include response(phone-large){
         padding: 4rem;
         border-radius: 0rem;
+        height:46rem;
+        justify-content: unset;
+        margin: 15rem 0;
     }
+
 }
 
 .one-column{
     flex-direction: column;
 
-    @include response(phone-mini){
+    @include response(phone){
         margin-top: 10rem;
     }
 }
@@ -59,7 +105,15 @@
     margin-top: 10rem;
     align-items: flex-start;
 
-    @include response(phone-mini){
+    @include response(tab-port){
+        margin-bottom: 5rem;
+        margin-top: 0rem;
+        align-items: center;
+        align-self: center;
+    }
+
+
+    @include response(phone){
         margin-bottom: 5rem;
         margin-top: 0rem;
         align-items: center;
@@ -83,7 +137,7 @@
     max-width: 80%;
     margin: 0 auto;
 
-    @include response(phone-mini){
+    @include response(phone){
         max-width: 100%;
     }
 

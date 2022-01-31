@@ -13,22 +13,40 @@
         max-width: 123rem;
         margin: 0rem auto;
 
-        @include response(phone-mini){
+        @include response(phone-large){
             width: 100%;
             grid-template-rows: repeat(4);
             gap: 4rem;
             grid-template-columns:1fr;
         }
 
+        @include response(tab-port){
+            width: 100%;
+            gap: 4rem;
+        }
+
+        @include response(tab-land){
+            width: 100%;
+            gap: 4rem;
+        }
+
+    }
+
+    @include response(tab-port){
+      padding: 4rem;
     }
 }
 
 .brand-block{
     width: 49rem;
 
-    @include response(phone-mini){
+    @include response(phone-large){
         width: 100%;
     }
+
+    @include response(tab-port){
+        width: 40rem;
+      }
 }
 
 .brand-text{

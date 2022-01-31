@@ -30,7 +30,7 @@ export default {
   setup(props){
       const currentSlide = ref(1);
       const getSlideCount = ref(null);
-      const autoPlayEnabled =  ref(props.startAutoPlay === undefined ? true : props.startAutoPlay);
+      const autoPlayEnabled =  ref(props.startAutoPlay === undefined ? false : props.startAutoPlay);
       const timeoutDuration = ref(props.timeout === undefined ? 5000 : props.timeout);
       const paginationEnabled = ref(props.pagination === undefined ? true : props.pagination);
       const navEnabled = ref(props.navigation === undefined ? true : props.navigation);

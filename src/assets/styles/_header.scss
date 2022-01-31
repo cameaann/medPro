@@ -9,10 +9,34 @@
     max-width: 123rem;
     margin: 5rem auto;
 
-    @include response(phone-mini){
-        margin: 0rem auto;
+    @include response(tab-land){
+        padding: 4rem;
+        margin: 0 auto;
+    }
+
+    @include response(tab-port){
+        padding: 2rem;
+        margin: 0;
+    }
+    @include response(phone-large){
         padding: 4rem;
     }
+
+
+    @include response(phone){
+        margin: 0rem auto;
+        padding: 2rem;
+        width: 90%;
+    }
+
+    // @include response(phone-mini){
+    //     margin: 0rem auto;
+    //     padding: 4rem;
+    //     width: 80%;
+    // }
+
+
+
 }
 
 .logo__container{
@@ -72,18 +96,23 @@
             border-color: $font-color-dark;
         }
     }
+
+    @include response(tab-port){
+       max-width: 70%;
+    }
 }
 
 
 ul>li.nav__item{
     margin: 0 2rem;
+
+    @include response(tab-port){
+        margin: 0;
+     }
 }
 
 .icon{
     display: flex;
-    // position: absolute;
-    // top: 2rem;
-    // right: 2.4rem;
     align-items: center;
 
     i{

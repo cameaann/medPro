@@ -65,12 +65,12 @@
       <img class="section__img" src="../assets/img/img3.svg" alt="" />
     </section>
     <section class="section blue" id="testimonials">
-      <div class="section-container u_medium_bottom">
+      <div class="section-container">
         <div class="secondary-heading secondary-heading_white">
           Что говорят наши клиенты
         </div>
       </div>
-      <Carousel class="carousel" v-slot="{ currentSlide }">
+      <Carousel startAutoPlay = true class="carousel" v-slot="{ currentSlide }">
           <Slide v-for="(client, index) in carouselSlides" :key="index">
              <div v-show="currentSlide === index + 1" class="card-review">
                 <div class="person">

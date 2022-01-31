@@ -58,11 +58,17 @@
     align-items: center;
     @include centralSlide;
 
-    @include response(phone-mini){
+    @include response(tab-port){
+        justify-content: space-evenly;
+
+    }
+
+    @include response(phone-large){
         flex-direction: column;
-        position: relative;
+        align-items:flex-start;
         width: 100%;
     }
+
 }
 .person{
     display: flex;
@@ -74,17 +80,22 @@
         border-radius: 50%;
         border: 4px solid #FFFFFF;
 
-        @include response(phone-mini){
+        @include response(phone-large){
             width:10rem;
             height: 10rem;
             border: 2px solid #FFFFFF;
             }
-            
-
     }
 
-    @include response(phone-mini){
+    @include response(phone-large){
+        margin-bottom: 2rem;
+    }
+
+    @include response(phone){
         margin-bottom: 3rem;
+    }
+    @include response(phone-mini){
+        margin: 2rem;
     }
 }
 
@@ -100,7 +111,19 @@
         font-size: 1.8rem;
     }
 
-    @include response(phone-mini){
+       @include response(tab-land){
+        width:20rem;
+    }
+
+    // @include response(tab-port){
+    //     width:15rem;
+    // }
+
+    @include response(phone-large){
+        width: 100%;
+
+    }
+    @include response(phone){
         width: 100%;
     }
 }
@@ -108,10 +131,21 @@
     width: 45rem;
     font-size: 1.9rem;
 
-    @include response(phone-mini){
+    @include response(tab-port){
+        width: 40rem;
+    }
+
+    @include response(phone-large){
         width: 100%;
         font-size: 1.9rem;
     }
+
+    @include response(phone){
+        width: 100%;
+        font-size: 1.9rem;
+    }
+
+
 }
 
 //CARD-ARTICLE
