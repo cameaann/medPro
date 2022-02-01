@@ -69,13 +69,15 @@
     left:50%;
     transform: translate(-50%, 0rem);
 
-    @include response(phone-large){
-        top: 32rem;
+    @include response(tab-land){
+        top: 28rem;
     }
 
-    @include response(phone-mini){
+    @include response(phone-large){
         top: 36rem;
     }
+
+
 }
 
 @mixin lineAfterText($colorb){

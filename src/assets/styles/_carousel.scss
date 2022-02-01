@@ -4,6 +4,10 @@
 .carousel{
     position: relative;
     height:20rem;
+
+    @include response(phone){
+        height: 25rem;
+    }
 }
 
 .navigation{
@@ -42,7 +46,3 @@
     color: $btn-active-medium;
     font-size: 2.5rem;
 }
-
-// .slide{
-//     position: absolute;
-// }
