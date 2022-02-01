@@ -16,11 +16,11 @@
         </div>
         <transition name="mobile-nav">
             <ul v-show="mobileNav" class="nav dropdown-nav">
-                <li class="nav__item active"><a class="link" href="#">Главная</a></li>
-                <li class="nav__item"><a class="link" href="#find">Найти врача</a></li>
-                <li class="nav__item"><a class="link" href="#services">Услуги</a></li>
-                <li class="nav__item"><a class="link" href="#testimonials">Отзывы</a></li>
-                <li class="nav__item"><a class="link" href="#about">О нас</a></li>
+                <li class="nav__item active" @click="toggleMobileNav"><a class="link" href="#">Главная</a></li>
+                <li class="nav__item" @click="toggleMobileNav"><a class="link" href="#find">Найти врача</a></li>
+                <li class="nav__item" @click="toggleMobileNav"><a class="link" href="#services">Услуги</a></li>
+                <li class="nav__item" @click="toggleMobileNav"><a class="link" href="#testimonials">Отзывы</a></li>
+                <li class="nav__item" @click="toggleMobileNav"><a class="link" href="#about">О нас</a></li>
             </ul>
         </transition>
   </div>
@@ -40,6 +40,7 @@ export default {
   created(){
     window.addEventListener("resize", this.checkScreen);
     this.checkScreen();
+    window.addEventListener('click', this.close);
   },
    methods:{
      toggleMobileNav(){
@@ -55,7 +56,13 @@ export default {
        this.mobile = false;
        this.mobileNav = false;
        return;
-     }
+     },
+      close(e) {
+      if (!(this.$el == e.target || this.$el.contains(e.target))){
+        this.mobileNav = false;
+      }
+    }
+
 
   }
 

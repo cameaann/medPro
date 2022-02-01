@@ -29,14 +29,6 @@
         width: 90%;
     }
 
-    // @include response(phone-mini){
-    //     margin: 0rem auto;
-    //     padding: 4rem;
-    //     width: 80%;
-    // }
-
-
-
 }
 
 .logo__container{
@@ -63,7 +55,7 @@
     transition: .5s ease all;
 
     &__item {
-        justify-self: start;
+        // justify-self: start;
         border-bottom: 1px solid transparent;
         transition: .5s ease all;
         cursor: pointer;
@@ -78,7 +70,9 @@
             display: block;
             color: $font-color-light;
             text-decoration: none;
-            padding: 2rem;
+            padding: 4rem 0rem 2rem 4rem;
+            // margin-left: 2rem;
+            // margin-top: 2rem;
             width:100%;
             height: 100%;
 
@@ -89,6 +83,7 @@
 
             &:hover{
                 color: $font-color-dark;
+
             }
         }
 
@@ -137,5 +132,6 @@ ul>li.nav__item{
     top:0;
     left: 0;
     z-index: 200;
-
+    font-size: 2.4rem !important;
 }
+
