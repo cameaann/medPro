@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/medPro/precache-manifest.6f2a3485ac513e5ae97acfa3b4d3dd93.js"
+  "/medPro/precache-manifest.9831ce07cf92e7fd9b734684c2569713.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "landpage"});
