@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7c382f618e2f3f470ab4",
+    "revision": "74a26877f6edd8a037a8",
     "url": "/medPro/css/app.dd318f08.css"
   },
   {
@@ -332,6 +332,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/medPro/img/main-img.9364944b.svg"
   },
   {
+    "revision": "eed1526381ba3299d1b50b5e32c022bf",
+    "url": "/medPro/img/manifest.json"
+  },
+  {
     "revision": "eea388178049578b477c7c82a0f609b1",
     "url": "/medPro/img/michael-dam.eea38817.jpg"
   },
@@ -340,19 +344,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/medPro/img/tracking.65254b43.svg"
   },
   {
-    "revision": "9d8e4185e1cc65c6efa90de6872221f9",
+    "revision": "b940eeb825d7ce4811b3711f9086bb2e",
     "url": "/medPro/index.html"
   },
   {
-    "revision": "7c382f618e2f3f470ab4",
-    "url": "/medPro/js/app.ada898d5.js"
+    "revision": "74a26877f6edd8a037a8",
+    "url": "/medPro/js/app.a6627887.js"
   },
   {
     "revision": "e83c2bf4d99245b515e5",
     "url": "/medPro/js/chunk-vendors.58d554ec.js"
   },
   {
-    "revision": "778c065c7c691033ec63a5fa7b1d0a6f",
+    "revision": "47f7a8b5da917c39f4265086b2eeb5e3",
     "url": "/medPro/manifest.json"
   },
   {
